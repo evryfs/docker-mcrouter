@@ -1,5 +1,5 @@
 FROM evryfs/docker-baseimage
-RUN apt-get update && apt -y install gnupg && \
+RUN apt-get update && apt -y install gnupg software-properties-common && \
   wget -O - https://facebook.github.io/mcrouter/debrepo/bionic/PUBLIC.KEY | apt-key add && \
   add-apt-repository 'deb https://facebook.github.io/mcrouter/debrepo/bionic bionic contrib' && \
   apt-get update && \
