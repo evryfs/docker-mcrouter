@@ -5,4 +5,4 @@ RUN apt-get update && apt -y install gnupg software-properties-common && \
   apt-get update && \
   apt-get -y install mcrouter && \
   apt-get -y clean && \
-	rm -rf /var/cache/apt /var/lib/apt/lists/* /tmp/* /var/tmp/*
+  rm -rf /var/cache/apt /var/lib/apt/lists/* /tmp/* /var/tmp/*
