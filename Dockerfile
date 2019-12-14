@@ -1,4 +1,4 @@
-FROM quay.io/evryfs/docker-baseimage
+FROM quay.io/evryfs/base-ubuntu:master
 RUN apt-get update && apt -y install gnupg software-properties-common && \
   wget -O - https://facebook.github.io/mcrouter/debrepo/bionic/PUBLIC.KEY | apt-key add && \
   add-apt-repository 'deb https://facebook.github.io/mcrouter/debrepo/bionic bionic contrib' && \
