@@ -1,4 +1,4 @@
-FROM quay.io/evryfs/base-ubuntu:bionic-20200713
+FROM quay.io/evryfs/base-ubuntu:bionic-20200807
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # hadolint ignore=DL3008
 RUN apt-get update && apt-get -y --no-install-recommends install gnupg software-properties-common && \
